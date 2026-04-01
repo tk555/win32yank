@@ -22,7 +22,7 @@ jobs:
           targets: x86_64-pc-windows-msvc
     # 普通にcargo buildコマンドを実行するだけ！
     - name: Build
-      run: cargo build --release
+      run: cargo build --release --locked
 
     - name: Arfifact
       uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
